@@ -2,10 +2,14 @@
   "name": "all-in-one",
   "version": "1.0.0",
   "description": "Project using VanillaJS, clusters, web workers and service workers",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "single-start": "node server/index"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Stephane MOROSO",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

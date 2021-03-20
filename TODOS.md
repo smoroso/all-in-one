@@ -1,4 +1,4 @@
-- Implement Clusters
+- Implement Clusters => DONE
 - Imlement Web Workers
 - Implement Service Workers
 - Implement Header/Footer in a template

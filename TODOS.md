@@ -2,4 +2,5 @@
 - Imlement Web Workers
 - Implement Service Workers
 - Implement Header/Footer in a template
-- Implement 2 different pages
+- Implement 2 different pages => DONE
+- Use transpiler to export only one js file in public/

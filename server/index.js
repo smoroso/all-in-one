@@ -1,12 +1,15 @@
 "use strict";
 
 (() => {
-  const express = require("express");
-  const path    = require("path");
+  const express     = require("express");
+  const path        = require("path");
+  const compression = require("compression");
 
   const server = express();
   const projectPath = process.cwd();
 
+
+  server.use(compression())	
   server.use(express.static("public")); // necessary to be able to access js and css files on client side
 
   server.get("/", (req, res) => {

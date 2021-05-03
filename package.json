@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Project using VanillaJS, clusters, web workers and service workers",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "start": "node app.js",
-    "single-start": "node server/index"
   },
   "author": "Stephane MOROSO",
   "license": "ISC",

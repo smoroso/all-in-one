@@ -17,12 +17,15 @@ const startServer = () => {
     res.sendFile(path.join(projectPath + "/public/index.html"));
   });
 
-  server.get("/about", async (req, res) => {
-    res.send(render("about", { 'users': ['fred', 'barney'] }))
-  })
+  server.get("/:name", async (req, res) => {
+    res.send(render(req.params.name, { 'users': ['fred', 'barney'] }))
+  });
   
   function render(viewName, ctx = {}) {
-    return _.template(fs.readFileSync(path.join(projectPath + `/public/${viewName}.html`)))(ctx)
+    const viewPath = path.join(projectPath + `/public/${viewName}.html`);
+    if(!fs.existsSync(viewPath)) { return 404; }
+
+    return _.template(fs.readFileSync(viewPath))(ctx)
   }
   
   const listener = server.listen(3000, () => {

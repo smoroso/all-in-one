@@ -7,6 +7,7 @@
 ## Tips
 - https://www.digitalocean.com/community/tutorials/nodejs-how-to-use__dirname
 - https://scoutapm.com/blog/nodejs-architecture-and-12-best-practices-for-nodejs-development
+- https://gist.github.com/joepie91/c0069ab0e0da40cc7b54b8c2203befe1
 - https://cheatcode.co/tutorials/how-to-add-cluster-support-to-node-js
 
 ## Q&A

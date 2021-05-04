@@ -19,6 +19,9 @@ https://www.freecodecamp.org/news/5-javascript-bad-parts-that-are-fixed-in-es6-c
 https://tvernon.tech/blog/javascript-strict-mode
 https://github.com/nodejs/node/search?l=Markdown&q=use+strict
 
+- save-dev VS save? -> save when core dependency; save-dev for optional
+https://www.geeksforgeeks.org/what-is-the-difference-between-save-and-save-dev-in-node-js/
+
 ## Template Engine
 ### Top List
 1. Pug
@@ -31,6 +34,7 @@ https://www.arrowhitech.com/node-js-templating-engine-top-10-best-every-develope
 ### Pug
 - https://pugjs.org/api/getting-started.html
 - https://auth0.com/blog/create-a-simple-and-stylish-node-express-app/
+- https://medium.com/@SigniorGratiano/server-side-rendering-with-pug-templates-e1e5947d4c1a
 
 ### Ejs
 - https://raddy.co.uk/blog/nodejs-express-layouts-and-partials/
@@ -41,4 +45,5 @@ https://www.arrowhitech.com/node-js-templating-engine-top-10-best-every-develope
 
 ### Lodash
 - https://odino.org/the-simplest-template-engine-for-nodejs/
+- https://github.com/sgamon/lodash-express
 

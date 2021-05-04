@@ -3,6 +3,8 @@
 import express from "express";
 import path from "path";
 import compression from "compression";
+import fs from "fs";
+import _ from "lodash";
 
 const startServer = () => {
   const server = express();
@@ -14,10 +16,14 @@ const startServer = () => {
   server.get("/", (req, res) => {
     res.sendFile(path.join(projectPath + "/public/index.html"));
   });
+
+  server.get("/about", async (req, res) => {
+    res.send(render("about", { 'users': ['fred', 'barney'] }))
+  })
   
-  server.get("/about", (req, res) => {
-    res.sendFile(path.join(projectPath + "/public/about.html"));
-  });
+  function render(viewName, ctx = {}) {
+    return _.template(fs.readFileSync(path.join(projectPath + `/public/${viewName}.html`)))(ctx)
+  }
   
   const listener = server.listen(3000, () => {
     console.log(`Server started, please go on port ${listener.address().port}`);

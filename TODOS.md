@@ -4,3 +4,4 @@
 - Implement Header/Footer in a template
 - Implement 2 different pages => DONE
 - Use transpiler to export only one js file in public/
+- Dynamic view render in server/index

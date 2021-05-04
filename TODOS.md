@@ -1,7 +1,7 @@
 - Implement Clusters => DONE
 - Imlement Web Workers
 - Implement Service Workers
-- Implement Header/Footer in a template
+- Implement Header/Footer in a template => DONE
 - Implement 2 different pages => DONE
 - Use transpiler to export only one js file in public/
-- Dynamic view render in server/index
+- Dynamic view render in server/index => DONE

@@ -18,7 +18,7 @@ const startServer = () => {
   });
 
   server.get("/:name", async (req, res) => {
-    res.send(render(req.params.name, { 'users': ['fred', 'barney'] }))
+    res.send(render(req.params.name, { 'users': ['fred', 'barney'], render }))
   });
   
   function render(viewName, ctx = {}) {

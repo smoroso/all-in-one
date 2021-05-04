@@ -22,6 +22,8 @@ const startServer = () => {
   const listener = server.listen(3000, () => {
     console.log(`Server started, please go on port ${listener.address().port}`);
   });
+
+  return server;
 };
 
 export default startServer;

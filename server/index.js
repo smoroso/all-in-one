@@ -14,14 +14,14 @@ const startServer = () => {
   server.use(express.static(path.join(projectPath, "public"))); // necessary to be able to access js and css files on client side
 
   server.get("/", (req, res) => {
-    res.sendFile(path.join(projectPath, "/views/index.html"));
+    res.send(render("layout/layout", { name: "index", data: {}, render }));
   });
 
   server.get("/:name", async (req, res) => {
-    if(!['about'].includes(req.params.name)) { return res.sendStatus(404); }
+    if(!["about"].includes(req.params.name)) { return res.sendStatus(404); }
 
-    const data = { users: ['fred', 'barney'] };
-    res.send(render('layout/layout', { name: req.params.name, data, render }));
+    const data = { users: ["fred", "barney"] };
+    res.send(render("layout/layout", { name: req.params.name, data, render }));
   });
 
   function render(viewName, ctx = {}) {

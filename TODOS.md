@@ -1,6 +1,6 @@
 - Implement Clusters => DONE
 - Imlement Web Workers
-- Implement Service Workers
+- Implement Service Workers => DONE
 - Implement Header/Footer in a template => DONE
 - Implement 2 different pages => DONE
 - Use transpiler to export only one js file in public/

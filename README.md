@@ -10,7 +10,7 @@ Used to run server on multiple nodes (increase performance)
 Used to boost frontend perf by using the multi-core functionaity of the client (increase performance)
 
 ## Service Workers
-Used to remember/reuse already fetched data (increase performance)
+Used to remember/reuse already fetched data (increase performance + support offline experiences)
 
 # Running
 - `npm start` -> Run the server with clusters

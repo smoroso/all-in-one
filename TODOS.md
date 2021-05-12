@@ -1,7 +1,7 @@
 - Implement Clusters => DONE
-- Imlement Web Workers
+- Imlement Web Workers => DONE
 - Implement Service Workers => DONE
 - Implement Header/Footer in a template => DONE
 - Implement 2 different pages => DONE
-- Use transpiler to export only one js file in public/
 - Dynamic view render in server/index => DONE
+- Refresh only the partial view, not the whole Layout

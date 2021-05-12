@@ -1,6 +1,6 @@
 "use strict";
 
-(() => {
+const startServiceWorker = () => {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker.register("js/sw/sw.js").then((registration) => {
@@ -12,5 +12,7 @@
       });
     });
   }
-})();
+};
+
+export default startServiceWorker;
 

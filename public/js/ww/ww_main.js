@@ -1,6 +1,6 @@
 "use strict";
 
-(() => {
+const executeWebWorker = () => {
   const worker = new Worker("/js/ww/fibonacci.js");
 
   worker.onmessage = (event) => {
@@ -14,4 +14,6 @@
   };
 
   worker.postMessage(13);
-})();
+};
+
+export default executeWebWorker;

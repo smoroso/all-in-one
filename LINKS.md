@@ -67,3 +67,6 @@ https://www.arrowhitech.com/node-js-templating-engine-top-10-best-every-develope
 ### SPA Logic
 - https://stackoverflow.com/questions/46744410/change-url-without-reloading-in-nodejs
 - https://stackoverflow.com/questions/47602091/how-to-use-react-router-4-0-to-refresh-current-route-not-reload-the-whole-page
+
+## Secure the app
+- https://av.tib.eu/media/44312

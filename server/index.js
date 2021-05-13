@@ -34,7 +34,7 @@ const startServer = () => {
     return _.template(fs.readFileSync(viewPath))(ctx);
   }
 
-  const listener = server.listen(3000, () => {
+  const listener = server.listen(process.env.PORT || 5000, () => {
     console.log(`Server started, please go on port ${listener.address().port}`);
   });
 

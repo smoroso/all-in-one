@@ -4,4 +4,5 @@
 - Implement Header/Footer in a template => DONE
 - Implement 2 different pages => DONE
 - Dynamic view render in server/index => DONE
-- Refresh only the partial view, not the whole Layout
+- Refresh only the partial view, not the whole Layout on route change => Not working (even with template engine and layout). Idea: SPA Logic
+- Push the app on heroku

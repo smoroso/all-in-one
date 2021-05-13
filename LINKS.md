@@ -57,3 +57,13 @@ https://www.arrowhitech.com/node-js-templating-engine-top-10-best-every-develope
 - https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers
 - https://medium.com/young-coder/a-simple-introduction-to-web-workers-in-javascript-b3504f9d9d1c
 - https://www.w3schools.com/html/html5_webworkers.asp
+
+## Dynamic Partials
+### Use Layout
+- https://raddy.co.uk/blog/nodejs-express-layouts-and-partials/
+- https://stackoverflow.com/questions/42434768/my-route-do-not-work-use-express-and-ejs
+- https://github.com/Soarez/express-ejs-layouts#readme
+
+### SPA Logic
+- https://stackoverflow.com/questions/46744410/change-url-without-reloading-in-nodejs
+- https://stackoverflow.com/questions/47602091/how-to-use-react-router-4-0-to-refresh-current-route-not-reload-the-whole-page

@@ -13,15 +13,18 @@ const startServer = () => {
   server.use(compression())	
   server.use(express.static(path.join(projectPath, "public"))); // necessary to be able to access js and css files on client side
 
+  const partials = {
+    footer: render("layout/footer")
+  };
   server.get("/", (req, res) => {
-    res.send(render("layout/layout", { name: "index", data: {}, render }));
+    res.send(render("layout/layout", { name: "index", partials, data: {}, render }));
   });
 
   server.get("/:name", async (req, res) => {
-    if(!["about"].includes(req.params.name)) { return res.sendStatus(404); }
+    if(!["about", "basic"].includes(req.params.name)) { return res.sendStatus(404); }
 
     const data = { users: ["fred", "barney"] };
-    res.send(render("layout/layout", { name: req.params.name, data, render }));
+    res.send(render("layout/layout", { name: req.params.name, partials, data, render }));
   });
 
   function render(viewName, ctx = {}) {

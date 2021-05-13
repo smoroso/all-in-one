@@ -1,16 +1,16 @@
 {
   "name": "all-in-one",
   "version": "1.0.0",
-  "description": "Project using VanillaJS, clusters, web workers and service workers",
+  "description": "Project using node, express, vanillaJS, lodash, clusters, web workers, service workers, mocha/chai, eslint and heroku",
   "main": "app.js",
   "type": "module",
+  "author": "Stephane MOROSO",
+  "license": "ISC",
   "scripts": {
     "start": "node app.js",
     "test": "mocha ./**/*.test.js --exit",
     "lint": "eslint ."
   },
-  "author": "Stephane MOROSO",
-  "license": "ISC",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
@@ -21,5 +21,22 @@
     "chai-http": "^4.3.0",
     "eslint": "^7.26.0",
     "mocha": "^8.3.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smoroso/all-in-one"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "vanilla",
+    "lodash",
+    "cluster",
+    "web worker",
+    "service worker",
+    "mocha",
+    "chai",
+    "eslint",
+    "heroku"
+  ]
 }

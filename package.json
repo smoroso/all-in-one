@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
-    "test": "mocha ./**/*.test.js --exit"
+    "test": "mocha ./**/*.test.js --exit",
+    "lint": "eslint ."
   },
   "author": "Stephane MOROSO",
   "license": "ISC",
@@ -18,6 +19,7 @@
   "devDependencies": {
     "chai": "^4.3.4",
     "chai-http": "^4.3.0",
+    "eslint": "^7.26.0",
     "mocha": "^8.3.2"
   }
 }

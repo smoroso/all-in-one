@@ -10,7 +10,7 @@ const startServer = () => {
   const server = express();
   const projectPath = process.cwd();
 
-  server.use(compression())	
+  server.use(compression());
   server.use(express.static(path.join(projectPath, "public"))); // necessary to be able to access js and css files on client side
 
   const partials = {

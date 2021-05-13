@@ -6,7 +6,7 @@
 - Dynamic view render in server/index => DONE
 - Refresh only the partial view, not the whole Layout on route change => Not working (even with template engine and layout). Idea: SPA Logic
 - Push the app on heroku => DONE
-- Add eslint to keep code clean
+- Add eslint to keep code clean => DONE
 - Secure the app
   - Npm: helmet; express-session; cookie-session; csurf; express-validator; bcrypt-node; express-enforces-ssl
   - HTTP Headers: Strict-Transport-Security; X-Frame-Options; X-XSS-Protection; X-Content-Type-Options; Content-Security-Policy

@@ -1,1 +1,7 @@
-Hello <% _.forEach(users, function(user) { %><li><%- user %></li><% }); %>
+About us:
+<div>
+  <%- data.users.length %>
+  <% console.log(_.toLower('--Foo-Bar--')); %>
+</div>
+
+<%= render("about/subview", { data, render }) %>

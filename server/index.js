@@ -21,7 +21,7 @@ const startServer = () => {
   });
 
   server.get("/:name", async (req, res) => {
-    if(!["about", "basic"].includes(req.params.name)) { return res.sendStatus(404); }
+    if (!fs.existsSync(projectPath + `/views/${req.params.name}.html`)) { return res.sendStatus(404); }
 
     const data = { users: ["fred", "barney"] };
     res.send(render("layout/layout", { name: req.params.name, partials, data, render }));

@@ -10,3 +10,4 @@
 - Secure the app
   - Npm: helmet; express-session; cookie-session; csurf; express-validator; bcrypt-node; express-enforces-ssl
   - HTTP Headers: Strict-Transport-Security; X-Frame-Options; X-XSS-Protection; X-Content-Type-Options; Content-Security-Policy
+- Server ideas: firebase, amazon, raspeberry pi, github itself, heroku... Choose a server depending on the size of what you want to do

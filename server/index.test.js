@@ -6,9 +6,9 @@ chai.use(chaiHttp);
 
 const server = startServer();
 
-describe("API Calls", function() {
-  describe("non existing endpoint", function() {
-    it("fails, as expected", function(done) {
+describe("API Calls", () => {
+  describe("non existing endpoint", () => {
+    it("fails, as expected", (done) => {
       chai.request(server)
         .get("/huh")
         .end((err, res) => {
@@ -18,8 +18,8 @@ describe("API Calls", function() {
     });
   });
 
-  describe("valid endpoint", function() {
-    it("returns a page", function(done) {
+  describe("valid endpoint", () => {
+    it("returns a page", (done) => {
       chai.request(server.listen())
         .get("/about")
         .end((err, res) => {
